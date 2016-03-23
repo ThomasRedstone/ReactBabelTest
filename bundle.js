@@ -94,10 +94,6 @@ process.umask = function() { return 0; };
 },{}],2:[function(require,module,exports){
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -108,7 +104,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var React = require('React');
 
-var Box = exports.Box = function (_React$Component) {
+var Box = function (_React$Component) {
     _inherits(Box, _React$Component);
 
     function Box() {
@@ -130,6 +126,8 @@ var Box = exports.Box = function (_React$Component) {
 
     return Box;
 }(React.Component);
+
+module.exports = Box;
 
 },{"React":159}],3:[function(require,module,exports){
 'use strict';

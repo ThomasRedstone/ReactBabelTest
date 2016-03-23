@@ -1,5 +1,5 @@
 var React = require('React')
-export class Box extends React.Component {
+class Box extends React.Component {
     render() {
         return (
             <div class="grid-box">
@@ -8,3 +8,5 @@ export class Box extends React.Component {
         )
     }
 }
+
+module.exports = Box
