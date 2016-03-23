@@ -120,13 +120,10 @@ var Box = exports.Box = function (_React$Component) {
     _createClass(Box, [{
         key: "render",
         value: function render() {
-            var name = this.props.name;
-            console.log("Name is: " + name);
-            console.log(this);
             return React.createElement(
                 "div",
-                { "class": "grid-box", id: "grid-box-{name}", key: "{name}" },
-                name
+                { "class": "grid-box" },
+                "Box"
             );
         }
     }]);
@@ -140,7 +137,7 @@ var Box = exports.Box = function (_React$Component) {
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Box = require('./app/views/Box.jsx');
-ReactDOM.render(React.createElement(Box, { name: 'Fred' }), document.getElementById("app"));
+ReactDOM.render(React.createElement(Box, null), document.getElementById("app"));
 
 },{"./app/views/Box.jsx":2,"react":316,"react-dom":160}],4:[function(require,module,exports){
 /**
